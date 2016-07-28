@@ -69,10 +69,12 @@ public class SWCModel
 	 */
 	public void addPoint(int pointIndex, SWCPoint swcPoint) throws SWCException
 	{
-		if(size() != pointIndex - 1)
-		{
-			throw new SWCException("A point skipped an index. Expected " + size() + 1 + " found " + pointIndex);
-		}
+        /**
+		*if(size() != pointIndex - 1)
+		*{
+		*	throw new SWCException("A point skipped an index. Expected " + size() + 1 + " found " + pointIndex);
+		*}
+        */
 		points.put(pointIndex, swcPoint);
 	}
 
